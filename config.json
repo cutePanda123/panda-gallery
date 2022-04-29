@@ -8,6 +8,6 @@
   "cleanup": true,
   "theme": "cards",
   "css": "./custom.css",
-  "footer": "cute panda's life",
+  "footer": "cute panda",
   "usage-stats": false
 }
