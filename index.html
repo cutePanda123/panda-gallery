@@ -6,67 +6,57 @@
       <meta name="viewport" content="width=device-width, user-scalable=no" />
       <title>Photo Gallery - Home</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
-      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
       <link rel="stylesheet" href="public/core.css" />
       <link rel="stylesheet" href="public/theme.css" />
   </head>
 
   <body>
 
-    <div>
+    
+    <div id="container">
     
       <!--
         Gallery title
       -->
-      <header style="color: #17baef;">
+      <header>
         <h1><a href="index.html">Photo Gallery</a></h1>
       </header>
     
       <!--
         Breadcrumbs of parent albums
       -->
-    
       <nav class="breadcrumbs">
-        <div class="mask"></div>
     <a class="breadcrumb-item" href="index.html">Home</a>
       </nav>
     
       <!--
-        Main gallery panel
+        Nested albums, if any
       -->
-      <section id="content">
-    
-        <!--
-          Nested albums, if any
-        -->
-        <ul id="albums">
-    <li>
-            <a href="Life.html">
+      <div id="albums">
+    <a href="Life.html" style="background-image: url('media/small/Life/bedroom-sun.jpeg')">
+            <div class="info">
               <h3>Life</h3>
-              <div class="meta">
-                <time>30 Apr 2022 - 30 Apr 2022</time><span class="separator">,</span>
-                <span class="summary">3 photos</span>
-              </div>
-              <ul class="grid clearfix"><li><img src="media/thumbs/Life/bedroom-sun.jpeg" /></li><li><img src="media/thumbs/Life/old-lady.jpg" /></li><li><img src="media/thumbs/Life/watch-coffee.jpg" /></li><li><img src="public/missing.png" /></li><li><img src="public/missing.png" /></li><li><img src="public/missing.png" /></li><li><img src="public/missing.png" /></li><li><img src="public/missing.png" /></li>          </ul>
-            </a>
-          </li>    </ul>
+              <div class="summary">3 photos</div>
+              <div class="date">30 Apr 2022 - 30 Apr 2022</div>
+            </div>
+          </a>  </div>
     
-        <!--
-          All photos and videos
-        -->
-        <ul id="media">
-        </ul>
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+      </ul>
     
-        <!--
-          Pagination
-        -->
+      <!--
+        Pagination
+      -->
     
-        <!--
-          Zip file link
-        -->
+      <!--
+        Zip file link
+      -->
     
-      </section>
     
       <!--
         Optional footer
