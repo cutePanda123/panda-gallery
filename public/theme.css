@@ -14,12 +14,11 @@ body {
   background: #fff;
   color: #444;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: lighter;
   margin-bottom: 1em;
 }
 a {
-  color: #444;
   text-decoration: none;
 }
 .clearfix:after {
@@ -36,81 +35,140 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
-#container {
-  padding: 2em;
-}
 header {
-  font-size: 1.8em;
-  margin-bottom: 1.1em;
+  color: #17baef;
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
 }
 h1 {
+  margin: 1em;
   display: inline-block;
-  font-weight: bold;
 }
 h1 a {
-  color: #444;
-}
-footer {
-  color: #666;
-  font-size: 0.9em;
-  font-style: italic;
-  margin-top: 3em;
-}
-footer a {
   color: #17baef;
 }
+footer {
+  border-top: 1px solid #17baef;
+  color: #17baef;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-left: 2em;
+  margin-top: 3em;
+  padding-top: 0.5em;
+}
+footer a {
+  color: #555;
+}
 nav.breadcrumbs {
-  border-bottom: 1px solid #ddd;
-  font-size: 1.2em;
-  margin-bottom: 2em;
-  padding: 0em 0em 0.8em 0.1em;
-}
-#albums,
-#media {
-  margin: 0em;
-}
-#albums a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  margin-right: 2em;
-  margin-bottom: 3em;
-  position: relative;
-  overflow: hidden;
-  width: 300px;
-  height: 220px;
-  background-size: cover;
-  border-radius: 8px;
-}
-#albums .info {
-  position: absolute;
-  padding: 1em;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
-  font-size: 0.9em;
-  line-height: 1.2em;
   margin: 0;
-  width: 100%;
+  padding: 1.5em;
   font-weight: bold;
+  height: 4em;
+  background: url('hero.jpg') center center repeat;
+  background-size: contain;
+  color: #fff;
+  position: relative;
+}
+nav.breadcrumbs .mask {
+  background-color: #17baef;
+  position: absolute;
+  top: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  z-index: 1;
+}
+nav.breadcrumbs a,
+nav span {
+  position: relative;
+  z-index: 2;
+  display: inline;
+}
+nav.breadcrumbs a {
+  color: #fff;
+  text-decoration: none;
+}
+nav.breadcrumbs .separator {
+  color: #fff;
+  display: inline-block;
+  margin: 0 0.5em;
+}
+#content {
+  padding: 2em;
+}
+#albums {
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+#albums a {
+  display: inline-block;
+  margin-right: 0.5em;
 }
 #albums h3 {
-  font-size: 1.3em;
-  margin-bottom: 0.2em;
+  color: #444;
+  margin-top: 1em;
+  font-size: 1em;
+}
+#albums .meta {
+  color: #999;
+  font-size: 0.9em;
+  font-style: italic;
+  line-height: 1.2em;
+  margin: 0.5em 0;
+  width: 100%;
+}
+#albums > li {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 0em;
+}
+#albums .grid {
+  opacity: 0.9;
+  width: 360px;
+  height: 60px;
+  overflow: hidden;
+}
+#albums .mosaic {
+  width: 360px;
+  opacity: 0.9;
+  overflow: hidden;
+}
+#albums .grid li {
+  float: left;
+  padding: 0;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+#albums .grid img {
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+@media only screen and (max-width: 450px) {
+  #albums .meta .separator {
+    display: none;
+  }
+  #albums .meta .summary {
+    display: block;
+  }
+}
+#media {
+  margin-bottom: 2em;
+}
+#media:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 #media li {
   float: left;
   margin-right: 0.4em;
   margin-bottom: 0.2em;
   position: relative;
-  cursor: zoom-in;
-}
-#media a {
-  display: inline-block;
-}
-#media img {
-  border-radius: 8px;
-  display: block;
 }
 #media li .video-overlay {
   left: 50%;
@@ -121,17 +179,10 @@ nav.breadcrumbs {
   top: 50%;
   width: 48px;
 }
-@media only screen and (max-width: 360px) {
-  #albums a {
-    width: 100%;
-    height: 190px;
-  }
-}
 nav.pagination {
   color: #666;
   display: inline-block;
   font-size: 1em;
-  margin-top: 2em;
   padding: 0em 0em 0.5em 0em;
 }
 nav.pagination .page {
