@@ -6,7 +6,7 @@
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "cards",
+  "theme": "mosaic",
   "css": "./custom.css",
   "footer": "cute panda's gallery",
   "usage-stats": false
