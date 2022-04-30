@@ -3,10 +3,10 @@
   "output": "./build_output",
   "title": "Photo Gallery",
   "sort-albums-by": "title",
-  "sort-media-by": "filename",
+  "sort-media-by": "start-date",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "mosaic",
+  "theme": "cards",
   "css": "./custom.css",
   "footer": "cute panda's gallery",
   "usage-stats": false
